@@ -1,0 +1,18 @@
+class rightwall{
+    constructor(x,y,width,height)
+    {
+        var options={
+            isStatic:true
+        }
+        this.body=Bodies.rectangle(435,675,20,50);
+        this.width=width;
+        this.height=height;
+        World.add(world,this.body);
+    }
+    display()
+    {
+        rectMode(CENTER);
+        fill(220);
+        rect(this.body.position.x,this.body.position.y,this.width,this.height);
+    }
+}    rightwall1=new rightwall(435,675,20,50);
